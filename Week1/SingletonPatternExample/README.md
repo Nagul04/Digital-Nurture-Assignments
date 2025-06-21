@@ -18,3 +18,14 @@ The `Main` class verifies that multiple calls to `getInstance()` return the same
 
 ## 🖥️ Sample Output
 
+## 📊 Time Complexity
+
+- Accessing the singleton instance via `getInstance()` is **O(1)** (constant time).
+- No loops or recursion involved.
+
+## 🚀 Optimization
+
+- To avoid synchronization overhead in multi-threaded environments, consider using:
+  - **Eager initialization**, or
+  - **Double-checked locking with `volatile`** (for thread-safe lazy initialization)
+- Current implementation is efficient for single-threaded or basic scenarios.
