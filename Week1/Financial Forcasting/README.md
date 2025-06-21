@@ -15,6 +15,12 @@ This Java project uses a recursive algorithm to calculate the future value of an
 Displays the future value for each year based on the initial amount and growth rate.
 
 ## Time Complexity
-- Recursive forecast: O(n)
-- Efficient and easy to understand recursion for simple annual projection
+
+- Recursive Function Time Complexity: O(n)
+- Each call depends on the result of the previous year, leading to linear depth of recursion.
+
+## Optimization
+
+- Since the computation is linear and does not overlap like Fibonacci, memoization is not required.
+- Tail recursion optimization is possible in some JVMs, but this example is efficient as is.
 
